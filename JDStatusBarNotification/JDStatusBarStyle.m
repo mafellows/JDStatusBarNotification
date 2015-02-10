@@ -14,6 +14,7 @@ NSString *const JDStatusBarStyleSuccess = @"JDStatusBarStyleSuccess";
 NSString *const JDStatusBarStyleMatrix  = @"JDStatusBarStyleMatrix";
 NSString *const JDStatusBarStyleDefault = @"JDStatusBarStyleDefault";
 NSString *const JDStatusBarStyleDark    = @"JDStatusBarStyleDark";
+NSString *const JTStatusBarStyleFantasyLife = @"JDStatusBarStyleFantasyLife";
 
 @implementation JDStatusBarStyle
 
@@ -36,7 +37,7 @@ NSString *const JDStatusBarStyleDark    = @"JDStatusBarStyleDark";
 {
     return @[JDStatusBarStyleError, JDStatusBarStyleWarning,
              JDStatusBarStyleSuccess, JDStatusBarStyleMatrix,
-             JDStatusBarStyleDark];
+             JDStatusBarStyleDark, JDStatusBarStyleFantasyLife];
 }
 
 + (JDStatusBarStyle*)defaultStyleWithName:(NSString*)styleName;
@@ -51,10 +52,18 @@ NSString *const JDStatusBarStyleDark    = @"JDStatusBarStyleDark";
     style.font = [UIFont systemFontOfSize:12.0];
     style.animationType = JDStatusBarAnimationTypeMove;
     
-    // JDStatusBarStyleDefault
     if ([styleName isEqualToString:JDStatusBarStyleDefault]) {
         return style;
     }
+
+    else if ([styleName isEqualToString:JDStatusBarStyleFantasyLife]) {
+        style.barColor = [UIColor colorWithRed:34.0f / 255.0f
+                                         green:34.0f / 255.0f
+                                          blue:34.0f / 255.0f
+                                         alpha:1.0f];
+        return style; 
+    }
+
     
     // JDStatusBarStyleError
     else if ([styleName isEqualToString:JDStatusBarStyleError]) {

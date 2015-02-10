@@ -14,6 +14,7 @@ extern NSString *const JDStatusBarStyleSuccess; /// This style has a green backg
 extern NSString *const JDStatusBarStyleMatrix;  /// This style has a black background with a green bold Courier label.
 extern NSString *const JDStatusBarStyleDefault; /// This style has a white background with a gray Helvetica label.
 extern NSString *const JDStatusBarStyleDark;    /// This style has a nearly black background with a nearly white Helvetica label.
+extern NSString *const JTStatusBarStyleFantasyLife; // This style is the dark color used in Fantasy Life
 
 typedef NS_ENUM(NSInteger, JDStatusBarAnimationType) {
     JDStatusBarAnimationTypeNone,   /// Notification won't animate
