@@ -14,7 +14,7 @@ NSString *const JDStatusBarStyleSuccess = @"JDStatusBarStyleSuccess";
 NSString *const JDStatusBarStyleMatrix  = @"JDStatusBarStyleMatrix";
 NSString *const JDStatusBarStyleDefault = @"JDStatusBarStyleDefault";
 NSString *const JDStatusBarStyleDark    = @"JDStatusBarStyleDark";
-NSString *const JTStatusBarStyleFantasyLife = @"JDStatusBarStyleFantasyLife";
+NSString *const JDStatusBarStyleFantasyLife = @"JDStatusBarStyleFantasyLife";
 
 @implementation JDStatusBarStyle
 
