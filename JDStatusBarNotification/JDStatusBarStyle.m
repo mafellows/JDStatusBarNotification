@@ -57,10 +57,14 @@ NSString *const JDStatusBarStyleFantasyLife = @"JDStatusBarStyleFantasyLife";
     }
 
     else if ([styleName isEqualToString:JDStatusBarStyleFantasyLife]) {
-        style.barColor = [UIColor colorWithRed:34.0f / 255.0f
-                                         green:34.0f / 255.0f
-                                          blue:34.0f / 255.0f
-                                         alpha:1.0f];
+        style.barColor = [UIColor colorWithRed:255.0f / 255.0f
+                           green:205.0f / 255.0f
+                            blue:2.0f / 255.0f
+                           alpha:1.0f];
+        style.textColor = [UIColor colorWithRed:34.0f / 255.0f 
+                                          green:34.0f / 255.0f 
+                                           blue:34.0f / 255.0f 
+                                          alpha:1.0f]; 
         return style; 
     }
 
